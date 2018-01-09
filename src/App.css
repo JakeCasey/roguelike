@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+div {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive; }
+
+span {
+  margin: 0; }
+
+.boardRow {
+  height: 16px;
+  margin: 0; }
+
+.cell {
+  display: inline-block;
+  height: 16px;
+  width: 16px; }
+
+.wall {
+  background-color: #556270; }
+
+.floor {
+  background-color: white;
+  background-image: url("https://image.ibb.co/iJisVR/0x72_16x16_Dungeon_Tileset_v4_www_imagesplitter_net_7_4.png"); }
+
+.player {
+  background-image: url("https://image.ibb.co/kaBbUm/0x72_16x16_Dungeon_Tileset_v4_91.png");
+  background-color: purple; }
+
+.enemy {
+  background-color: red; }
+
+.item {
+  background-color: yellow; }
+
+.statusBar {
+  position: fixed;
+  margin: 20px; }
+
+.hidden {
+  background-color: black; }
+
+.textOverlay {
+  background-color: black;
+  box-shadow: 4px 0 black, -4px 0 black, 0 -4px black, 0 4px black, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+  margin: 16px auto;
+  position: fixed;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  width: 400px;
+  height: 200px; }

@@ -1,0 +1,82 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+div {
+margin: 0;
+font-family: 'Press Start 2P', cursive;
+}
+span {
+margin: 0;
+}
+
+@mixin step2v2( $width, $color, $bgcolor ) {
+box-shadow:
+$width 0 $bgcolor,
+-$width 0 $bgcolor,
+0 (-$width) $bgcolor,
+0 $width $bgcolor,
+2*$width 0 $color,
+-2*$width 0 $color,
+0 (-2*$width) $color,
+0 2*$width $color,
+0 0 0 $width $color;
+margin: 4*$width auto;
+}
+
+.boardRow
+{
+height: 16px;
+margin: 0;
+}
+.cell {
+display: inline-block;
+height: 16px;
+width: 16px;
+//border: 1px solid black;
+}
+
+.wall {
+background-color: #556270;
+}
+
+.floor {
+background-color: white;
+background-image:url("https://image.ibb.co/iJisVR/0x72_16x16_Dungeon_Tileset_v4_www_imagesplitter_net_7_4.png");
+}
+
+.player {
+
+background-image:url("https://image.ibb.co/kaBbUm/0x72_16x16_Dungeon_Tileset_v4_91.png");
+background-color: purple;
+}
+
+.enemy {
+background-color: red;
+}
+.item {
+ background-color: yellow;
+
+}
+.statusBar {
+position: fixed;
+margin: 20px;
+}
+
+.hidden {
+background-color: black;
+}
+
+
+.textOverlay {
+background-color: black;
+@include step2v2( 4px, white, black );
+position: fixed;
+margin: 0 auto;
+padding: 20px;
+color: white;
+width: 400px;
+height: 200px;
+
+}
+
